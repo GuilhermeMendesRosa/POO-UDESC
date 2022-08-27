@@ -1,5 +1,3 @@
-package exercicio1.main;
-
 public class Teste {
     public static void main(String[] args) {
         char[] nome = new char[30];
