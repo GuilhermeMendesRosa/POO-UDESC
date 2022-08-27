@@ -4,8 +4,6 @@ import exercicio1.model.Calculadora;
 import exercicio1.model.Impressora;
 import exercicio1.model.InputDadosDoTeclado;
 
-import java.util.Scanner;
-
 public class Ex01 {
     public static void main(String[] args) {
         InputDadosDoTeclado input = new InputDadosDoTeclado();
@@ -16,10 +14,10 @@ public class Ex01 {
         impresora.imprimirString("Passe dois valores:\n");
 
         impresora.imprimirString("#1: ");
-        numero1 = input.proximaInteiro();
+        numero1 = input.proximoInteiro();
 
         impresora.imprimirString("#2: ");
-        numero2 = input.proximaInteiro();
+        numero2 = input.proximoInteiro();
 
         calculadora.mostrarNumerosPrimosEntreIntervalo(numero1, numero2);
     }
