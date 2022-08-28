@@ -1,8 +1,8 @@
 package exercicios.model;
 
 public class Calculadora {
+    private Impressora impressora = new Impressora();
     public void mostrarNumerosPrimosEntreIntervalo(int numero1, int numero2) {
-        Impressora impressora = new Impressora();
         int menor, maior;
 
         if (numero1 <= numero2) {
@@ -26,7 +26,19 @@ public class Calculadora {
                 impressora.imprimirInteiro(i);
             }
         }
-
-    }
     }
 
+    public void mostrarSequenciaDeFibonacci(int numeroSequencia) {
+        if (numeroSequencia < 2) { numeroSequencia = 2; }
+
+        int[] sequenciaDeFibonacci = new int[numeroSequencia];
+        sequenciaDeFibonacci[0] = 0;
+        sequenciaDeFibonacci[1] = 1;
+
+        for (int i = 2; i < numeroSequencia; i++) {
+            sequenciaDeFibonacci[i] = sequenciaDeFibonacci[i-1] + sequenciaDeFibonacci[i-2];
+        }
+
+        impressora.imprimirSequencia(sequenciaDeFibonacci);
+    }
+}

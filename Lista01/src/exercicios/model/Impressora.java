@@ -18,4 +18,14 @@ public class Impressora {
     public void quebraDeLinha() {
         System.out.print("\n");
     }
+
+    public void imprimirSequencia(int[] sequencia) {
+        for (int i = 0; i < sequencia.length; i++) {
+            if (i != sequencia.length - 1) {
+                this.imprimirString(String.valueOf(sequencia[i]) + ", ");
+            } else {
+                this.imprimirInteiro(sequencia[i]);
+            }
+        }
+    }
 }
