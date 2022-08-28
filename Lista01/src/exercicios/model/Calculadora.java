@@ -1,4 +1,4 @@
-package exercicio1.model;
+package exercicios.model;
 
 public class Calculadora {
     public void mostrarNumerosPrimosEntreIntervalo(int numero1, int numero2) {

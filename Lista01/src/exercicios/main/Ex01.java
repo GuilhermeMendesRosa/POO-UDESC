@@ -1,8 +1,13 @@
-package exercicio1.main;
+package exercicios.main;
 
-import exercicio1.model.Calculadora;
-import exercicio1.model.Impressora;
-import exercicio1.model.InputDadosDoTeclado;
+import exercicios.model.Calculadora;
+import exercicios.model.Impressora;
+import exercicios.model.InputDadosDoTeclado;
+
+/*
+Exiba no console todos os primos existentes em um intervalo a,b definido pelo
+usu´ario.
+*/
 
 public class Ex01 {
     public static void main(String[] args) {
