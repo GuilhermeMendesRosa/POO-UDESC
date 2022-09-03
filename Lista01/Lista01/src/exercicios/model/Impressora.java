@@ -28,4 +28,15 @@ public class Impressora {
             }
         }
     }
+
+    public void imprimirSequenciaDePrimos(int[] vetor) {
+        for(int i = vetor.length-1; i > 0; i--) {
+            if (vetor[i] != 0) {System.out.println(vetor[i]);}
+        }
+    }
+    public void imprimirSequenciaDeFibonacci(int[] vetorSequanciaDeFibonacci) {
+        for(int i = 0; i < vetorSequanciaDeFibonacci.length; i++) {
+            System.out.printf("%s ", vetorSequanciaDeFibonacci[i]);
+        }
+    }
 }

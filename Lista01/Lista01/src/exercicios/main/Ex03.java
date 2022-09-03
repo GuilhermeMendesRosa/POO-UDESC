@@ -7,19 +7,20 @@ soma destes n primeiros termos, onde n é um inteiro fornecido pelo usuário.
 
 import exercicios.model.Calculadora;
 import exercicios.model.Impressora;
-import exercicios.model.InputDadosDoTeclado;
+import exercicios.model.Leitor;
 
 public class Ex03 {
     public static void main(String[] args) {
         Impressora impressora = new Impressora();
-        InputDadosDoTeclado input = new InputDadosDoTeclado();
+        Leitor input = new Leitor();
         Calculadora calculadora = new Calculadora();
 
-        int numeroSequencia = 2;
+        int tamanhoDaSequencia = 2;
 
         impressora.imprimirString("Digite os n primeiros números da sequência de Fibonacci: ");
-        numeroSequencia = input.proximoInteiro();
+        tamanhoDaSequencia = input.proximoInteiro();
 
-        calculadora.mostrarSequenciaDeFibonacci(numeroSequencia);
+        int[] vetorSequanciaDeFibonacci = calculadora.retornaSequenciaDeFibonacci(tamanhoDaSequencia);
+        impressora.imprimirSequenciaDeFibonacci(vetorSequanciaDeFibonacci);
     }
 }
