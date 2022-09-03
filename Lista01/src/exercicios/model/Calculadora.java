@@ -3,7 +3,7 @@ package exercicios.model;
 public class Calculadora {
     private Impressora impressora = new Impressora();
     public int[] pegarNumerosPrimosEntreIntervalo(int inicio, int fim) {
-        int[] vetorDeNumerosPrimos = new int[fim-inicio];
+        int[] vetorDeNumerosPrimos = new int[fim-inicio-1];
 
         impressora.imprimirString("Intervalo de números primos entre " + inicio + " e " + fim + "\n");
 

@@ -30,8 +30,8 @@ public class Impressora {
     }
 
     public void imprimirSequenciaDePrimos(int[] vetor) {
-        for(int i = vetor.length-1; i > 0; i--) {
-            if (vetor[i] != 0) {System.out.println(vetor[i]);}
+        for(int i = 0; i < vetor.length-1; i++) {
+            if (vetor[i] != 0) {System.out.printf("%s ", vetor[i]);}
         }
     }
     public void imprimirSequenciaDeFibonacci(int[] vetorSequanciaDeFibonacci) {
