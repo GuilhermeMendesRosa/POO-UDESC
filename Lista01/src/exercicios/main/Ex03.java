@@ -18,7 +18,7 @@ public class Ex03 {
         int tamanhoDaSequencia = 2;
 
         impressora.imprimirString("Digite os n primeiros números da sequência de Fibonacci: ");
-        tamanhoDaSequencia = input.proximoInteiro();
+        tamanhoDaSequencia = input.lerInteiro();
 
         int[] vetorSequanciaDeFibonacci = calculadora.retornaSequenciaDeFibonacci(tamanhoDaSequencia);
         impressora.imprimirSequenciaDeFibonacci(vetorSequanciaDeFibonacci);

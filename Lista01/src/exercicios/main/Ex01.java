@@ -19,10 +19,10 @@ public class Ex01 {
         impresora.imprimirString("Passe dois valores:\n");
 
         impresora.imprimirString("início: ");
-        inicio = leitor.proximoInteiro();
+        inicio = leitor.lerInteiro();
 
         impresora.imprimirString("fim: ");
-        fim = leitor.proximoInteiro();
+        fim = leitor.lerInteiro();
 
         int[] vetorDeNumerosPrimos = calculadora.pegarNumerosPrimosEntreIntervalo(inicio, fim);
         impresora.imprimirSequenciaDePrimos(vetorDeNumerosPrimos);

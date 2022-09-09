@@ -8,7 +8,7 @@ public class PreencheVetor {
         Impressora impressora = new Impressora();
         for (int i = 0; i < 10; i++) {
             impressora.imprimirString("#" + i + ": ");
-            vetor[i] = leitor.proximoInteiro();
+            vetor[i] = leitor.lerInteiro();
         }
     
         return vetor;
